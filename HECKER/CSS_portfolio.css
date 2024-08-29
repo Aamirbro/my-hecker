@@ -1,0 +1,496 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image:url(pics/khansaab_whitebg.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+hr{
+    color: rgb(255, 0, 89);
+    border: 1px solid rgb(255, 0, 89);
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    color: rgb(255, 255, 255);
+
+}
+
+b{
+    color: rgb(255, 0, 89);
+    -webkit-text-stroke: 0.8px black;
+}
+.b2{
+    color: rgb(255, 0, 89);
+    -webkit-text-stroke: 0.8px black;
+}
+
+.main{
+    background-image: url(pics/aamir_logo.jpg );
+    width: 100px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid  rgb(255, 0, 89);
+    border-radius: 0 20px 0 20px ;
+    box-shadow: 0 4px 10px 0  rgb(255, 0, 89),0 4px 16px 0 rgb(0, 0, 0);
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.main p{
+    background-repeat: repeat;
+    color: rgb(255, 0, 89);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 80px;
+    letter-spacing: 6px;
+
+}
+
+.menu a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 30px;
+    padding: 8px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom : 3px solid rgb(255, 0, 89);
+    transition: all 0.4s ;
+}
+
+.menu a:hover::before{
+    width: 100%;
+}
+
+#home{
+    border-bottom : 3px solid rgb(255, 0, 89);
+}
+
+
+.content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    margin-top: 210px;
+    margin-left: 20px;
+    color: black;
+}
+
+.content h4{
+    font-size: 22px;
+}
+
+.content h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 65px;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    
+}
+
+.content h6{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#content_h5{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 150px;
+}
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 30px;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.input{
+    display: flex;
+    background-color:white ;
+    color: black;
+    width: 290px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+input{
+    margin-right: 61px;
+    color: rgb(255, 0, 89);
+    border: none;
+}
+
+.input h5{
+    background-color: rgb(255, 0, 89);
+    color: aliceblue;
+    padding: 7px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+
+.page2{
+    border: 1px white solid;
+    display: flex;
+    padding: 90px;
+
+}
+
+.img2{
+    margin-top: 110px;
+    margin-bottom: 80px;
+    background-image: url(pics/aamir.jpg);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    padding: 140px;
+    border-radius: 12%;
+    box-shadow: 0 1px 16px 0 rgb(255, 0, 89);
+    cursor: pointer;
+    transition: all 0.4s ease ;
+    animation: for_img 3s infinite;
+}
+
+@keyframes for_img{
+    0%{ 
+        box-shadow: 0 3px 16px red, 0 3px 16px black;
+    }
+    20%{ 
+        box-shadow: 0 3px 16px rgb(8, 160, 6), 0 3px 16px black;
+    }
+    40%{
+         box-shadow: 0 3px 16px rgb(234, 255, 0), 0 3px 16px black;
+        }
+    60%{
+        box-shadow: 0 3px 16px rgb(0, 208, 255), 0 3px 16px black;
+    }
+    80%{
+        box-shadow: 0 3px 16px rgb(255, 0, 225), 0 3px 16px black;
+    }
+    100%{
+        box-shadow: 0 3px 16px red, 0 3px 16px black;
+    }
+}
+    
+    
+.img2:hover{
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0 1px 16px   rgb(0, 4, 255), 0 1px 16px   rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.content2_line{
+    margin-top:20px ;
+    background-color:rgb(255, 0, 89) ;
+    width: 180px;
+    height: 3px;
+}
+
+
+.content2{
+    margin-left: 100px;
+    margin-top: 100px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content2 h1{
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.content2 h3{
+    margin-top: 20px;
+    color: black;
+}
+
+i{
+    color:rgb(255, 0, 89);
+}
+
+.content2 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    margin-top: 20px;
+}
+
+.content2 h5{
+    background-color: rgb(255, 0, 89);
+    color: white;
+    padding: 8px;
+    margin-top: 30px;
+    width: 90px;
+    height: 16px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.content2 h5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0 rgb(255, 0, 89);
+}
+
+.page3{
+    border: 1px white solid;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.content3 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: chartreuse;
+    transition: all 0.3s ease-in ;
+    animation: aamir 3s ease-in-out infinite;
+}
+
+
+@keyframes aamir{
+    0%{ 
+        color: rgb(25, 20, 20) ;
+        -webkit-text-stroke: 1px rgb(221, 14, 14);
+    }
+    20%{ 
+        color: red;
+        -webkit-text-stroke: 1px white;
+    }
+    40%{
+         color: rgb(7, 152, 11) ; 
+         -webkit-text-stroke:1px  rgb(11, 4, 201);
+        }
+    60%{
+         color:blue ;
+         -webkit-text-stroke:1px  rgb(174, 189, 42);
+         }
+    80%{
+         color:rgb(255, 230, 3) ; 
+         -webkit-text-stroke:1px  rgb(175, 14, 91);
+        }
+    100%{
+         color:rgb(0, 246, 209); 
+         -webkit-text-stroke:1px  hotpink;
+        }
+
+}
+
+
+.field{
+    margin-top: 80px;
+    display: flex;
+}
+
+
+fieldset{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: darkgray;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 30px; 
+    margin: 70px;
+    box-shadow:  10px 14px 1px 0 rgb(255, 0, 89);
+}
+
+fieldset h2{
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:  rgb(255, 0, 89);
+}
+
+fieldset h5{
+    width: 90px;
+    height: 16px;
+    margin-top: 40px;
+    margin-left: 95px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: rgb(255, 0, 89);
+    color: aliceblue;
+    transition: all 0.4s ease-in-out;
+}
+
+fieldset h5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0 rgb(255, 0, 89);
+}
+
+
+.page4{
+    border: 1px white solid;
+    color: black;
+    text-align: center;
+}
+
+.page4 h2{
+    margin-top: 60px;
+    font-size: 26px;
+}
+
+
+.page4 h5{
+    margin: 25px 0  60px 700px;
+    padding-top: 5px;
+    background-color: rgb(255, 0, 89);
+    color: aliceblue;
+    width: 100px;
+    height: 20px;
+    border-radius: 190px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page4 h5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0 rgb(255, 0, 89);
+}
+
+.page5{
+    border: 1px white solid;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.page5 h2{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: rgb(255, 0, 89);
+}
+
+.page5 h4{
+    margin-bottom: 30px;
+}
+
+
+.page5 i{
+    color: rgb(255, 0, 89);
+    
+}
+
+.page5 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.page5 h6{
+    padding-top: 6px;
+    margin-bottom: 50px;
+    margin-left: 695px;
+    background-color:  rgb(255, 0, 89);
+    color: aliceblue;
+    width: 120px;
+    height: 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out ;
+}
+
+
+.page5 h6:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px 0 rgb(255, 0, 89);
+}
+
+.content2 h1{
+    position: relative;
+    font-size: 90px;
+    color: white;
+    -webkit-text-stroke: 3px white;
+}
+
+.content2 h1::before{
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    -webkit-text-stroke: 3px rgb(255, 0, 89);
+    color: black;
+    height: 100%;
+    border: 4px solid rgb(255, 0, 89);
+    border-radius: 20px;
+    font-size: 90px;
+    animation: name 3.3s linear infinite;
+}
+
+
+@keyframes name {
+    0%, 10%, 100% {
+        width: 0 ;
+    }
+    70%, 90%{
+        width: 45% ;
+    }
+}
+
+
+
+#youtube{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+#whatsapp{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#insta{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#phone{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#facebook{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+
+
+

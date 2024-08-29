@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            background-image: url(pics/Hecker.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 1000px;
+            margin: 10px 0 10px 0;
+        }
+
+        nav{
+            padding: 10px;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .header_h3{
+            color: aliceblue;
+        }
+
+        .menu a{
+            cursor: progress;
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            justify-content: space-between;
+            margin: 2px 50px 0 50px;
+        }
+
+        .button a{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            border: 2px solid rgb(255, 0, 0) ;
+            border-radius: 10px;
+            text-decoration: none;
+            letter-spacing: 2px;
+            padding-top: 3px;
+            padding-bottom: 5px;   
+            transition: all 0.33s  ease;
+        }
+        
+        .button a:hover{
+            color: aliceblue;
+            transform: translateY(-10px);
+            box-shadow: 2px 1px 24px 0 rgb(255, 0, 0);
+        }
+        
+
+        .details{
+            margin-top: 190px;
+            text-align: center;
+        }
+        .details marquee{
+            color: red;
+            font-size: 60px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .field{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+            
+        }
+        
+        fieldset{
+            margin: 0 50px 110px 50px;
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            transition: all 0.33s  ease;
+
+        }
+
+        fieldset:hover{
+            box-shadow: 0 2px 14px 0 red;
+            border: 1px solid red;
+            transform: translateY(-10px);
+
+        }
+
+        fieldset h1{
+            margin-bottom: 19px;
+            color: red;
+        }
+        .form-class{
+            text-align: center;
+        }
+        hr{
+
+            background-color: red;
+        }
+        .write-name{
+            margin-bottom:100px ;
+        }
+        .write-name h2{
+            font-size: 50px;
+            margin-top: 100px;
+            color :red
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="header_h3">
+            <h3>INCREDIBLE</h3>
+        </div><br>
+        <div class="menu">
+            <a href="portfolio.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#Gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a><br>
+        </div>
+        <div class="button">
+            <a href="https://www.google.com" target="_blank">Google.com</a>
+        </div>
+        </nav>
+        
+    </header>
+    <div class="details">
+        <hr>
+        <marquee direction="right" > Welcome To Dark-Web World </marquee>
+        <hr>
+    </div>
+    
+    <div class="field">
+    <fieldset>
+        <h1>Dark-Web</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nesciunt reprehenderit nihil aperiam ipsa explicabo similique, quod non ratione molestiae officia aspernatur cum facilis! Itaque modi laudantium, molestiae non voluptatem explicabo, blanditiis cum omnis eos fuga minima necessitatibus at consequatur voluptate est iure quo? Nostrum, dolore molestiae. Rem, maxime earum!</p>
+    </fieldset>
+    <fieldset>
+        <h1>Illegal Weapon</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nesciunt reprehenderit nihil aperiam ipsa explicabo similique, quod non ratione molestiae officia aspernatur cum facilis! Itaque modi laudantium, molestiae non voluptatem explicabo, blanditiis cum omnis eos fuga minima necessitatibus at consequatur voluptate est iure quo? Nostrum, dolore molestiae. Rem, maxime earum!</p>
+    </fieldset>
+    <fieldset>
+        <h1> Secret Govt Details</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nesciunt reprehenderit nihil aperiam ipsa explicabo similique, quod non ratione molestiae officia aspernatur cum facilis! Itaque modi laudantium, molestiae non voluptatem explicabo, blanditiis cum omnis eos fuga minima necessitatibus at consequatur voluptate est iure quo? Nostrum, dolore molestiae. Rem, maxime earum!</p>
+    </fieldset>
+    </div>
+    
+
+<form action="" class="form-class">
+    <div class="write-name">
+
+    <h2> Drop Your Details </h2>
+</div>
+<div class="name">
+    Name : <input type="text" >
+</div><br>
+<div class="number">
+    Contact : <input type="number">
+</div><br>
+<div class="email">
+    E-mail : <input type="email">
+</div><br>
+<!-- <div>
+    checkbox <input type="checkbox">
+</div><br> -->
+<div>
+    Gender :
+    Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+    Others <input type="radio" name="mygender">
+</div><br>
+<div>
+    <textarea name="myText" cols="30" rows="20" value="Drop Additional Detais"> </textarea>
+</div>
+<div>
+    <input type="button" value="Submit Now">
+    <input type="reset" value="Reset Now">
+</div><br>
+</form>
+</body>
+</html>
